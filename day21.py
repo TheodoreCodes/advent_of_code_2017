@@ -1,19 +1,10 @@
 import numpy as np
-import sys
 
 
 def str_to_nparray(string):
     rule = string.split("/")
     s = len(rule)
     return np.array([list(row[x:x + s]) for row in rule for x in range(0, s, s)])
-
-
-# def has_row_column(m1, m2):
-#     if m1.shape == m2.shape and (m1 == "#").sum() == (m2 == '#').sum():
-#         trow = m1[0]
-#         if np.array_equal(trow, m2[:, len(m1) - 1]) or np.array_equal(trow, m2[len(m1) - 1, :]):
-#             return True
-#         return False
 
 
 def match(m1, m2):
@@ -34,21 +25,13 @@ def divide(m):
     return [m[np.ix_(i, j)] for i in sections for j in sections]
 
 
-# noinspection PyRedundantParentheses
 def concat(m_arr):
     if len(m_arr) > 1:
         rows = []
         side = int(len(m_arr)**(1/2))
         for i in range(0, len(m_arr), side):
             rows.append(m_arr[i:i+side])
-        try:
-            np.block(rows)
-        except:
-            print(len(m_arr))
-            for i in m_arr:
-                print(i)
-                print("\n")
-            sys.exit(0)
+
         return np.block(rows)
     else:
         return m_arr[0]
@@ -76,7 +59,6 @@ for _ in range(5):
 print("First part:", (pattern == '#').sum())
 
 for _ in range(13):
-    print(_)
     pattern = divide(pattern)
     for i, m in enumerate(pattern):
         for rule in cookbook:
