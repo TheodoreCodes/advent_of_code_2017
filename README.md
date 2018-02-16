@@ -22,3 +22,4 @@
 |<a href="https://github.com/proh-gram-er/advent_of_code_2017/blob/master/day18.py">Day 18</a>|Duet
 |<a href="https://github.com/proh-gram-er/advent_of_code_2017/blob/master/day19.py">Day 19</a>|A Series of Tubes
 |<a href="https://github.com/proh-gram-er/advent_of_code_2017/blob/master/day20.py">Day 20</a>|Particle Swarm
+|<a href="https://github.com/proh-gram-er/advent_of_code_2017/blob/master/day21.py">Day 21</a>|Fractal Art

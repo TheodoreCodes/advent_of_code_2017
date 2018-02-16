@@ -25,14 +25,14 @@ def part_1():
 def part_2():
     destroyed = 0
     for t in range(1000):
-        collisions = defaultdict(list)
+        collisions = defaultdict(int)
         for i, p in enumerate(particles):
             key = tuple([p[0][i] + t * p[1][i] + (t/2)*(t+1)*p[2][i] for i in range(3)])
-            collisions[key].append(i)
+            collisions[key] += 1
 
         for c in collisions.values():
-            if len(c) > 1:
-                destroyed += len(c)
+            if c > 1:
+                destroyed += c
 
     return len(particles) - destroyed
 
