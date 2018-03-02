@@ -30,4 +30,4 @@ def contaminate(gap, bursts):
 
 
 print("First part:", contaminate(2, 10_000))
-print("First part:", contaminate(1, 10_000_000))
+print("Second part:", contaminate(1, 10_000_000))

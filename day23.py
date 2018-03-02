@@ -27,8 +27,18 @@ def execute(ins):
 
 
 muls = 0
+
 while i < len(instructions):
     muls += 1 if instructions[i][0] == 'mul' else 0
     execute(i)
 
 print("First part", muls)
+
+reg_h = 0
+for i in range(105_700, 105_700 + 17_001, 17):
+    for j in range(2, i):
+        if i % j == 0:
+            reg_h += 1
+            break
+
+print("Second part:", reg_h)
