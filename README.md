@@ -26,3 +26,4 @@
 |<a href="https://github.com/proh-gram-er/advent_of_code_2017/blob/master/day22.py">Day 22</a>|Sporifica Virus
 |<a href="https://github.com/proh-gram-er/advent_of_code_2017/blob/master/day23.py">Day 23</a>|Coprocessor Conflagration
 |<a href="https://github.com/proh-gram-er/advent_of_code_2017/blob/master/day24.py">Day 24</a>|Electromagnetic Moat
+|<a href="https://github.com/proh-gram-er/advent_of_code_2017/blob/master/day25.py">Day 25</a>|The Halting Problem
